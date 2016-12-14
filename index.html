@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PAN SERVICE</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/sanfrancisco-font.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="btn-job">
+            <span style=""><img  id="btn-top-header" src="assets/img/header-btn-job.png"></span>
+        </div>
+        <div class="menu">
+            <a class="active" href="index.html">Home <img src="assets/img/chevron-down.png"></a>
+            <a href="">About us <img src="assets/img/chevron-down.png"></a>
+            <a href="services.html">Services <img src="assets/img/chevron-down.png"></a>
+            <a href="news.html">News <img src="assets/img/chevron-down.png"></a>
+            <a href="">Social responsibility <img src="assets/img/chevron-down.png"></a>
+            <a href="">Career <img src="assets/img/chevron-down.png"></a>
+            <a id="to-tab-contact" href="#">Contact Us</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="anything">
+            <img src="assets/img/homepage.png">
+        </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script>
+    $('document').ready(function(){
+        $('#btn-top-header').click(function(){
+                    $('html, body').animate({scrollTop:5670},1000);
+        })
+        $('#to-tab-contact').click(function(){
+            $('html, body').animate({scrollTop:6430},1000);
+        })
+        var params = {};
+
+        if (location.search) {
+            var parts = location.search.substring(1).split('&');
+
+            for (var i = 0; i < parts.length; i++) {
+                var nv = parts[i].split('=');
+                if (!nv[0]) continue;
+                params[nv[0]] = nv[1] || true;
+            }
+        }
+
+       if(params.tojob == "1") {
+           $('html, body').animate({scrollTop:5670},1000);
+       }
+    })
+</script>
+</html>

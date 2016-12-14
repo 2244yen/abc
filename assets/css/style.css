@@ -1,0 +1,56 @@
+body {
+    margin: auto;
+    font-family: "San Francisco";
+    width: 1340px;
+}
+.header {
+    background: url('../img/header.png') no-repeat;
+    height: 141px;
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.32);
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.32);
+    width: 100%;
+    position: fixed;
+    top:0;
+    max-width: 1340px;
+}
+.menu {
+    float: right;
+    margin-top: 96px;
+    margin-right: 130px;
+    font-size: 17px;
+    font-weight: 200;
+    color: #0095e5;
+}
+.menu a {
+    padding-right: 30px;
+    color: #0095e5;
+    text-decoration: none;
+}
+.menu a:last-child{
+    padding-right: 0px;
+}
+.menu .active {
+    color: #000000;
+}
+.menu img {
+    width: 12px;
+}
+.container img {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    margin-top: 141px;
+}
+
+.btn-job {
+    right: 132px;
+    position: absolute;
+    cursor: pointer;
+}
+@media screen and (max-width: 1339px) {
+    .btn-job {
+        opacity: 0;
+    }
+}

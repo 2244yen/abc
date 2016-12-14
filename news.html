@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PAN SERVICE</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/sanfrancisco-font.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+    <div class="btn-job">
+        <a href="index.html?tojob=1"><img  id="btn-top-header" src="assets/img/header-btn-job.png"></a>
+    </div>
+    <div class="menu">
+        <a class="" href="index.html">Home <img src="assets/img/chevron-down.png"></a>
+        <a href="">About us <img src="assets/img/chevron-down.png"></a>
+        <a href="services.html">Services <img src="assets/img/chevron-down.png"></a>
+        <a class="active"  href="news.html">News <img src="assets/img/chevron-down.png"></a>
+        <a href="">Social responsibility <img src="assets/img/chevron-down.png"></a>
+        <a href="">Career <img src="assets/img/chevron-down.png"></a>
+        <a id="to-tab-contact" href="#">Contact Us</a>
+    </div>
+</div>
+<div class="container">
+    <img src="assets/img/news.png">
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $('document').ready(function(){
+        $('#to-tab-contact').click(function(){
+            $('html, body').animate({scrollTop:1000},1000);
+        })
+    })
+</script>
+</body>
+</html>
