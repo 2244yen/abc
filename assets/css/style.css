@@ -1,3 +1,14 @@
+
+
+@font-face {font-family: "Light";
+    src: url("//db.onlinewebfonts.com/t/d94e1a63d279e95a6460455edb61eb1f.eot");
+    src: url("//db.onlinewebfonts.com/t/d94e1a63d279e95a6460455edb61eb1f.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d94e1a63d279e95a6460455edb61eb1f.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/d94e1a63d279e95a6460455edb61eb1f.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/d94e1a63d279e95a6460455edb61eb1f.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/d94e1a63d279e95a6460455edb61eb1f.svg#Light") format("svg");
+}
+
 body {
     margin: auto;
     font-family: "San Francisco";
@@ -13,6 +24,7 @@ body {
     position: fixed;
     top:0;
     max-width: 1340px;
+    z-index: 9999;
 }
 .menu {
     float: right;
@@ -36,12 +48,14 @@ body {
 .menu img {
     width: 12px;
 }
-.container img {
+/*.container img {
     width: 100%;
-}
+}*/
 .container {
     width: 100%;
     margin-top: 141px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .btn-job {

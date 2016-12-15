@@ -1,0 +1,167 @@
+/*======================
+	Style for index page
+========================*/
+
+section {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+/**=================
+	Main Section
+====================**/
+
+.section-home {
+	position: relative;
+}
+.welcome {
+	font-family: "Light";
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	text-transform: uppercase;
+	z-index: 999;
+	position: absolute;
+	bottom: 36px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/**=================
+	Section Services
+====================**/
+
+.services {
+	background: url(../img/services-bg.jpg) top center;
+	background-size: cover;
+}
+.service-item-group:first-child {
+	padding-top: 200px;
+}
+.service-item-group:last-child {
+	padding-bottom: 50px;
+}
+.service-item-group {
+	margin: 0 auto;
+	height: 215px;
+	width: 900px;
+	vertical-align: middle;
+	position: relative;
+}
+.service-item-group:nth-child(1) .service-item:nth-child(1) {
+	left: 155px;
+}
+.service-item-group:nth-child(1) .service-item:nth-child(2) {
+	right: 20px;
+}
+.service-item-group:nth-child(2) .service-item:nth-child(1) {
+	left: 20px;
+}
+.service-item-group:nth-child(2) .service-item:nth-child(2) {
+	right: 20px;
+}
+.service-item-group .img-item:nth-child(odd) {
+	padding-right: 15px !important;
+}
+.service-item-group .img-item:nth-child(even) {
+	margin-left: 15px !important;
+}
+.service-item {
+	height: 100%;
+	width: auto;
+	position: absolute;
+	display: inline-block;
+}
+.service-item img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.img-item, .img-name {
+	transition: transform 0.5s ease-in-out;
+}
+.service-item:nth-child(1):hover .img-item {
+	transform: translateX(-20px);
+}
+.service-item:nth-child(2):hover .img-item {
+	transform: translateX(20px);
+}
+.service-item:hover .img-name {
+	transform: scale(1.1);
+}
+
+/**=================
+	Section Numbers
+====================**/
+
+.numbers {
+	background: #30a1dd;
+	min-height: 680px;
+	max-height: 680px;
+	width: 100%;
+	position: relative;
+}
+.numbers .heading-img {
+	padding-top: 35px;
+}
+.number-group .number-img:nth-child(1) {
+	left: 260px;
+}
+.number-group .number-img:nth-child(2) {
+	left: 490px;	
+}
+.number-group .number-img:nth-child(3) {
+	left: 710px;
+}
+.number-group .number-img:nth-child(4) {
+	left: 900px;
+}
+.number-img {
+	position: absolute;
+	top: 165px;
+	transform-origin: 0;
+	transition: all 0.5s ease-in-out;
+}
+.number-group .number-img:hover {
+	transform: translateX(-30px);
+}
+
+/**=================
+	Section Projects
+====================**/
+
+.heading-img img {
+	display: block;
+	margin: 60px auto 0;
+}
+.more-btn {
+	position: absolute;
+	top: 15%;
+	right: 5%;
+}
+
+/**=================
+	Section Clients
+====================**/
+
+.clients {
+	background-color: #56aed4;
+	padding-top: 50px;
+}
+
+/**=================
+	Section Award
+====================**/
+
+
+/**=================
+	Section Form
+====================**/
+
+.form {
+	max-height: 700px;
+}
+
+
