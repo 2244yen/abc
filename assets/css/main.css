@@ -2,9 +2,33 @@
 	Style for index page
 ========================*/
 
+/**
+* Add Font
+*/
+
+@font-face {
+	font-family: "UTM-Dax";
+	src: url("../font/UTM Dax.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "UTM-Helvetins";
+	src: url("../font/UTM HelvetIns.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "UTM Cafeta";
+	src: url("../font/UTM Cafeta.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
 section {
 	width: 100%;
 	height: auto;
+	min-height: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -28,6 +52,13 @@ section {
 	bottom: 36px;
 	left: 50%;
 	transform: translateX(-50%);
+}
+.example-animation {
+	height: 100%;
+}
+.example-animation>div{
+	width: 100%;
+	max-height: 650px !important;
 }
 
 /**=================
@@ -132,6 +163,10 @@ section {
 	Section Projects
 ====================**/
 
+.heading-img {
+	padding: 0;
+	margin: 0;
+}
 .heading-img img {
 	display: block;
 	margin: 60px auto 0;
@@ -149,6 +184,78 @@ section {
 .clients {
 	background-color: #56aed4;
 	padding-top: 50px;
+}
+
+/**=================
+	Section TEAM
+====================**/
+
+.team {
+	background-color: #fff;
+	min-height: 679px;
+}
+.our-team {
+	max-width: 100%;
+	height: auto;
+}
+.our-team-info {
+	margin-top: 22px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	text-align: center;
+	width: auto;
+	height: auto;
+	color: #2093d1;
+	transition: all 0.3s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+}
+.our-team-sex {
+	font-size: 12px;
+}
+.our-team-name {
+	font-size: 20px;
+	font-family: "UTM-Helvetins";
+}
+.our-team-pos {
+	font-size: 12px;
+	font-family: "UTM-Dax";
+}
+.our-team-city {
+	font-size: 12px;
+	font-family: "UTM-Helvetins";
+}
+
+/*----section e last footer----*/
+
+.quote {
+	margin: 32px auto 0; 
+	text-align: center;
+	font-family: "UTM-Dax";
+	font-size: 14px;
+	color: #2093d1;
+	position: relative;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s ease-in-out 0.3s;
+}
+.quote-left, .quote-right {
+	font-size: 35px;
+	font-family: "UTM Cafeta";
+	color: #2093d1;
+}
+.quote-right {
+	position: absolute;
+	right: 10px;
+	bottom: -15px;
+}
+.mis-current .quote {
+	visibility: visible;
+	opacity: 1;
+}
+.mis-current .our-team-info {
+	visibility: visible;
+	opacity: 1;
 }
 
 /**=================
